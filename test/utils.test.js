@@ -1,5 +1,5 @@
 //here we test our render functions
-import { renderFamily } from '../utils.js';
+import { renderFamily, renderPlanets } from '../utils.js';
 
 const test = QUnit.test;
 
@@ -19,3 +19,8 @@ test('renderFamily should return a <div> with family name and food-likes', (expe
     // Make assertions about what is expected versus the actual result
     expect.equal(actual.outerHTML, expected);
 });
+
+test('renderPlanets should return a div with planet stats', (expect) => {
+
+    const expected = 
+})

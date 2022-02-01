@@ -1,6 +1,7 @@
 import { family } from './family.js';
+import { planets } from './planets.js';
 //the list of family members
-import { renderFamily } from './utils.js';
+import { renderFamily, renderPlanets } from './utils.js';
 //gives us a div we need to append to our HTML
 
 const display = document.getElementById('display');
@@ -13,7 +14,15 @@ for (let member of family) {
     display.append(div);
 
 }
-renderFamily();
+// renderFamily();
+
+const display2 = document.getElementById('display2');
+
+for (let planet of planets) {
+  // console.log(planet);
+    const div = renderPlanets(planet);
+    display2.append(div);
+}
 
 
 // let state
