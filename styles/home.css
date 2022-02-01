@@ -1,1 +1,6 @@
 /* add home page styles here */
+.family-section {
+    width: 200px;
+    height: 200px;
+    border: black 3px solid;
+}
