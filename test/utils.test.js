@@ -22,5 +22,14 @@ test('renderFamily should return a <div> with family name and food-likes', (expe
 
 test('renderPlanets should return a div with planet stats', (expect) => {
 
-    const expected = 
-})
+    const expected = `<div class="planets"><h5>hey... checkout the</h5><h3>Earth</h3><p> Earth has 0 number of rings, is 3(rd/th) away from the sun and has about 7000000000 people hanging out on it. Cool!</p></div>`;
+
+    const actual = renderPlanets({
+        name: 'Earth', //h3
+        numOfRings: 0, //p for the rest?
+        orderFromSun: 3,
+        population: 7000000000,
+    });
+
+    expect.equal(actual.outerHTML, expected);
+});
