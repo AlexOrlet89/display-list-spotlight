@@ -1,5 +1,9 @@
 /* add home page styles here */
-.family-section {
+.family {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
     width: 200px;
     height: 200px;
     border: black 3px solid;

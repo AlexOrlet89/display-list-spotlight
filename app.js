@@ -1,17 +1,21 @@
-// import functions and grab DOM elements
 import { family } from './family.js';
-// console.log(family);
+//the list of family members
+import { renderFamily } from './utils.js';
+//gives us a div we need to append to our HTML
 
-const familySection = document.getElementById('family-section');
+const display = document.getElementById('display');
+//grabs the display section in which we will append our freefloating div
 
-familySection.textContent = 'awefawef';
+for (let member of family) {
+// console.log(member);
+    const div = renderFamily(member);
+//passes each member through 
+    display.append(div);
 
-export function renderFamily() {
-    for (let member of family) {
-        console.log(member);
-    }
 }
 renderFamily();
+
+
 // let state
 // set event listeners 
   // get user input
