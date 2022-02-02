@@ -19,3 +19,13 @@
     border: black 3px solid;
     background-color:rgb(73, 201, 165);
 }
+.cereals {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    border: black 3px solid;
+    background-color:rgb(73, 201, 165);
+}
