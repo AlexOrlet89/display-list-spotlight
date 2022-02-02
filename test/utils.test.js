@@ -1,5 +1,5 @@
 //here we test our render functions
-import { renderFamily, renderPlanets, renderCereals } from '../utils.js';
+import { renderFamily, renderPlanets, renderCereals, renderFourtet } from '../utils.js';
 // import { cereals } from '../cereals.js';
 
 const test = QUnit.test;
@@ -52,4 +52,16 @@ test('renderCereals should return a div with a ul and two', (expect) => {
     expect.equal(actual.outerHTML, expected);
 });
 
-// console.log(cereals[0]);
+test('renderFourtet should return the same as expected', (expect) => {
+
+    const expected = `<div class="fourtet"><h3>Morning / Evening</h3><h5>2015</h5><ul><li>Morning Side</li><li>Evening Side</li></ul></div>`;
+
+    const actual = renderFourtet({
+        name: 'Morning / Evening',
+        year: 2015,
+        tracks: ['Morning Side', 'Evening Side']
+    });
+
+    expect.equal(actual.outerHTML, expected);
+
+});

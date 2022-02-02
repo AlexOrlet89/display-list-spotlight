@@ -1,4 +1,4 @@
-export const fortetAlbums = [
+export const fourtetAlbums = [
     {
         name: 'Morning / Evening',
         year: 2015,

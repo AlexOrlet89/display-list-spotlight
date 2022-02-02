@@ -56,3 +56,25 @@ export function renderCereals(cereal) {
     div.append(h3, p, ul);
     return div;
 }
+
+export function renderFourtet(album) {
+    const div = document.createElement('div');
+    div.classList.add('fourtet');
+
+    const h3 = document.createElement('h3');
+    h3.textContent = `${album.name}`;
+
+    const h5 = document.createElement('h5');
+    h5.textContent = `${album.year}`;
+
+    const ul = document.createElement('ul');
+    for (let track of album.tracks) {
+        console.log(track);
+        let li = document.createElement('li');
+        li.textContent = `${track}`;
+        ul.append(li);
+    }
+    div.append(h3, h5, ul);
+    return div;
+
+}
