@@ -1,1 +1,42 @@
 /* add home page styles here */
+.family {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border: black 3px solid;
+    color:aquamarine;
+}
+.planets {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    border: black 3px solid;
+    background-color:rgb(73, 201, 165);
+}
+.cereals {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    border: black 3px solid;
+    background-color:rgb(73, 201, 165);
+}
+.fourtet {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 400px;
+    height: 350px;
+    border: black 3px solid;
+    background-color:rgb(73, 201, 165);
+}
