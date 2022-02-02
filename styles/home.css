@@ -31,11 +31,12 @@
 }
 .fourtet {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     width: 400px;
-    height: 300px;
+    height: 350px;
     border: black 3px solid;
     background-color:rgb(73, 201, 165);
 }
