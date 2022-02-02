@@ -1,8 +1,9 @@
 import { family } from './family.js';
 import { planets } from './planets.js';
 import { cereals } from './cereals.js';
+import { fourtetAlbums } from './fourtet.js';
 //the list of family members
-import { renderFamily, renderPlanets, renderCereals } from './utils.js';
+import { renderFamily, renderPlanets, renderCereals, renderFourtet } from './utils.js';
 //gives us a div we need to append to our HTML
 
 const display = document.getElementById('display');
@@ -30,6 +31,13 @@ const display3 = document.getElementById('display3');
 for (let cereal of cereals) {
     const div = renderCereals(cereal);
     display3.append(div);
+}
+
+const display4 = document.getElementById('display4');
+
+for (let album of fourtetAlbums) {
+    const div = renderFourtet(album);
+    display4.append(div);
 }
 // console.log(renderCereals([0]));
 // let state
